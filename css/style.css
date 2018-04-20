@@ -96,7 +96,7 @@ body {
     width: 49%;
     text-align: center;
     display: inline-block;
-    margin: auto;
+    margin: 0;
     float: left;
     padding-bottom: 80px;
 }
@@ -110,7 +110,7 @@ body {
 #about p {
     display: inline-block;
     width: 49%;
-    margin: auto;
+    margin: 0;
 }
 
 #clear {
@@ -149,6 +149,7 @@ body {
 #portfolio {
     text-align: center;
     background-color: #f9fcfe;
+    padding-bottom: 100px;
 }
 
 #portfolio h2 {
@@ -174,7 +175,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
-    position: relative;
 }
 
 #portfolio-img2 {
@@ -186,7 +186,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
-    position: relative;
 }
 
 #portfolio-img3 {
@@ -198,29 +197,89 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
-    position: relative;
 }
 
 .mask {
-    position: absolute;
-    border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     height: 100%;
     opacity: 0;
     transition: all 0.4s;
-    padding: 20px;
-    font-size: 17px;
+    font-size: 15px;
+    padding: 10px;
 }
 
 .mask:hover {
     opacity: 1;
 }
 
+.border-portfolio {
+    border: 1px solid white;
+    height: 100%;
+}
+
+.content-portfolio {
+    height: 100%;
+}
 
 #clear2 {
     clear: both;
 }
 
+#kontakt {
+    background-color: #213b50;
+}
+
+#contact-me {
+    width: 49%;
+    display: inline-block;
+    color: white;
+    padding-left: 100px;
+    height: 100%;
+    float: left;
+}
+
+#contact-me h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 0;
+    line-height: 100px;
+}
+
+#contact-me a {
+    width: 50px;
+}
+
+#contact-me a i {
+    margin: 10px 20px 10px 0;
+    background-color: #213b50;
+    border: 1px solid white;
+    color: white;
+    height: 100%;
+}
+
+#form {
+    width: 49%;
+    display: inline-block;
+    height: 100%;
+    float: left;
+}
+
+#clear3 {
+    clear: both;
+}
+
+#footer p {
+    color: white;
+    padding-left: 100px;
+    margin: 0;
+    line-height: 30px;
+    background-color: #1f2f49;
+    font-size: 13px;
+}
+
+
+/*nie ustawiamy wysokosci na sekcjach  , ale ustawiamy padding*/
 
 
