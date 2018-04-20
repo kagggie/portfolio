@@ -89,6 +89,7 @@ body {
     text-align: center;
     margin: 0;
     line-height: 100px;
+    padding-top: 60px;
 }
 
 #img-about {
@@ -147,6 +148,7 @@ body {
 
 #portfolio {
     text-align: center;
+    background-color: #f9fcfe;
 }
 
 #portfolio h2 {
@@ -156,6 +158,68 @@ body {
     margin: 0;
     line-height: 100px;
     padding-top: 30px;
+}
+
+#container-img {
+    width: 80%;
+    margin: auto;
+}
+
+#portfolio-img1 {
+    height: 330px;
+    width: 33%;
+    display: inline-block;
+    background-image: url("img/portfolio1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+
+#portfolio-img2 {
+    height: 330px;
+    width: 33%;
+    display: inline-block;
+    background-image: url("img/portfolio2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+
+#portfolio-img3 {
+    height: 330px;
+    width: 33%;
+    display: inline-block;
+    background-image: url("img/portfolio3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+
+.mask {
+    position: absolute;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+
+#clear2 {
+    clear: both;
 }
 
 
