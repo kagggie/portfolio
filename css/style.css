@@ -1,0 +1,162 @@
+/*helpers*/
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*nawigacja*/
+
+#menu {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+}
+
+#menu ul {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 40px;
+    line-height: 60px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #40e512;
+}
+
+/*sekcja z header */
+
+#header {
+    background-image: url("img/header-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+#container-header {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+#container-header h1{
+    font-weight: 300;
+    font-size: 60px;
+}
+
+#container-header h2{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.green {
+    color: #40e512;
+}
+
+/*sekcja z about*/
+
+#about {
+    background-color: #f9fcfe;
+    box-shadow: 0px 7px 18px 0px rgba(212, 204, 212, 1);
+    z-index: 2;
+    position: relative;
+}
+
+#about h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 100px;
+}
+
+#img-about {
+    width: 49%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    float: left;
+    padding-bottom: 80px;
+}
+
+#img-about img{
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#about p {
+    display: inline-block;
+    width: 49%;
+    margin: auto;
+}
+
+#clear {
+    clear: both;
+}
+
+/*umiejetnosci*/
+
+#umiejetnosci {
+    text-align: center;
+    background-color: #f9fcfe;
+}
+
+#umiejetnosci h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 0;
+    line-height: 100px;
+    padding-top: 30px;
+}
+
+#umiejetnosci .figure {
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    margin: 40px 20px 150px 30px;
+}
+
+#umiejetnosci .figure img {
+    width: 100%;
+}
+
+/*potrfolio*/
+
+#portfolio {
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 0;
+    line-height: 100px;
+    padding-top: 30px;
+}
+
+
+
