@@ -1,0 +1,102 @@
+@media all and (max-width: 992px) {
+    #container-header h1 {
+        font-size: 50px;
+    }
+     #container-header h2 {
+        font-size: 25px;
+    }
+    #img-about {
+        width: 100%;
+         padding-bottom: 40px;
+    }
+    #img-about img {
+        width: 100%;
+    }
+    #about .title {
+        line-height: 60px;
+    }
+    #about p {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    #skills .figure {
+        margin-bottom: 50px;
+    }
+    .portfolio-images {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #portfolio .title {
+        line-height: 60px;
+    }
+    #form {
+        width: 100%;
+    }   
+    #form form:first-child {
+        margin-top: 50px;
+    }
+    #contact-me {
+        width: 100%;
+        padding-left: 30px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #container-header h1 {
+        font-size: 40px;
+    }
+     #container-header h2 {
+        font-size: 20px;
+    }
+    #about h2 {
+        padding-top: 30px;
+    }
+    #portfolio h2 {
+        padding-top: 0px;
+    }
+    #form form input[type="button"] {
+    width: 21%;
+    }
+    #form form:first-child {
+        margin-top: 60px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #container-header h1 {
+        font-size: 30px;
+    }
+     #container-header h2 {
+        font-size: 15px;
+    }
+    #about .title {
+        line-height: 50px;
+    }
+    #skills .title {
+        line-height: 55px;
+    }
+    #skills .figure {
+        margin-top: 10px;
+    }
+    #portfolio {
+        padding-bottom: 40px;
+    }
+    #portfolio .title {
+        line-height: 50px;
+    }
+    #contact {
+        padding: 0;
+    }
+    #form {
+        padding: 0 5px;
+    }
+    #form form:first-child {
+        margin-top: 10px;
+    }
+    #contact-me a {
+        margin-top: 30px;
+    } 
+    #contact-me .title {
+        line-height: 60px;
+    }
+}

@@ -145,7 +145,7 @@ body {
 #skills .figure {
     display: inline-block;
     width: 70px;
-    margin: 40px 20px 150px 30px;
+    margin: 40px 20px 100px 30px;
 }
 
 #skills .figure img {
@@ -222,6 +222,7 @@ body {
 
 .content-portfolio {
     position: absolute;
+    width: 100%;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -287,7 +288,7 @@ body {
     float: left;
 }
 
-#form input[type="text"] {
+#form form input[type="text"] {
     width: 100%;
     background-color: #376284;
     border: none;
@@ -295,15 +296,15 @@ body {
     padding: 10px;
 }
 
-#form input[type="text"]::placeholder {
+#form form input[type="text"]::placeholder {
     color: #9ea39c;
 }
 
-#form input[name="email"] {
+#form form input[name="email"] {
     margin-top: 20px;
 }
 
-#form textarea {
+#form form textarea {
     width: 100%;
     margin-top: 20px;
     background-color: #376284;
@@ -312,7 +313,7 @@ body {
     padding: 10px;
 }
 
-#form textarea::placeholder {
+#form form textarea::placeholder {
     color: #9ea39c;
 }
 
