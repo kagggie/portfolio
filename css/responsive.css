@@ -22,9 +22,12 @@
     #skills .figure {
         margin-bottom: 50px;
     }
-    .portfolio-images {
-        width: 100%;
+    .portfolio-images { 
+        width: 50%;
         margin-bottom: 20px;
+    }
+    .portfolio-images:last-child {
+        width: 100%;
     }
     #portfolio .title {
         line-height: 60px;
@@ -36,12 +39,26 @@
         margin-top: 50px;
     }
     #contact-me {
+        text-align: center;
         width: 100%;
         padding-left: 30px;
     }
 }
 
 @media all and (max-width: 768px) {
+    #mobile-menu {
+        display: block;
+        text-align: right;
+        color: #40e512;
+        padding-right: 20px;
+        line-height: 40px;
+    }
+    #menu ul {
+        display: none;
+    }
+    #menu #menu-button:checked + ul {
+        display: block;
+    }
     #container-header h1 {
         font-size: 40px;
     }

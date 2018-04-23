@@ -274,7 +274,14 @@ body {
     border: 1px solid white;
     color: white;
     font-size: 25px;
+    transition: all 0.4s;
 }
+/*
+
+#contact-me a .fa {
+    tutaj definiowac mozna line height: 
+}
+*/
 
 #contact-me a:hover {
     background-color: white;
@@ -294,6 +301,7 @@ body {
     border: none;
     color: #eff1f2;
     padding: 10px;
+    outline: 0;
 }
 
 #form form input[type="text"]::placeholder {
@@ -311,6 +319,7 @@ body {
     border: none;
     color: white;
     padding: 10px;
+    
 }
 
 #form form textarea::placeholder {
@@ -320,14 +329,21 @@ body {
 #form form input[type="button"]{
     margin-top: 30px;
     margin-bottom: 30px;
-    border: 1px solid white;
-    color: #FFF;
+    border: 1px solid #5ac92e;
+    color: whitesmoke;
     background-color: #5ac92e;
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
     width: 15%;
     float: right;
+    transition: all 0.4s;
+}
+
+#form form input[type="button"]:hover {
+    border: 1px solid #5ac92e;
+    background-color: whitesmoke;
+    color: #5ac92e;
 }
 
 #form form:first-child {
@@ -345,6 +361,11 @@ body {
     line-height: 30px;
     background-color: #1f2f49;
     font-size: 13px;
+}
+
+#mobile-menu,
+#menu-button {
+    display: none;
 }
 
 
