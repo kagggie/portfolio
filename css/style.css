@@ -41,7 +41,7 @@ body {
 /*sekcja z header */
 
 #header {
-    background-image: url("img/header-background.jpg");
+    background-image: url("../img/header-background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,22 +78,26 @@ body {
 #about {
     background-color: #f9fcfe;
     box-shadow: 0px 7px 18px 0px rgba(212, 204, 212, 1);
-    z-index: 2;
     position: relative;
+    padding: 0 50px;
 }
 
-#about h2 {
+#about .title {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 30px;
-    text-align: center;
     margin: 0;
     line-height: 100px;
+}
+
+#about h2 {
+    text-align: center;
     padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 #img-about {
-    width: 49%;
+    width: 50%;
     text-align: center;
     display: inline-block;
     margin: 0;
@@ -109,38 +113,42 @@ body {
 
 #about p {
     display: inline-block;
-    width: 49%;
+    width: 50%;
     margin: 0;
+    float: left;
 }
 
-#clear {
+.clear {
     clear: both;
 }
 
 /*umiejetnosci*/
 
-#umiejetnosci {
+#skills {
     text-align: center;
     background-color: #f9fcfe;
+    padding: 0 50px;
 }
 
-#umiejetnosci h2 {
+#skills .title {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 30px;
     margin: 0;
     line-height: 100px;
+}
+
+#skills h2 {
     padding-top: 30px;
 }
 
-#umiejetnosci .figure {
+#skills .figure {
     display: inline-block;
     width: 70px;
-    height: 50px;
     margin: 40px 20px 150px 30px;
 }
 
-#umiejetnosci .figure img {
+#skills .figure img {
     width: 100%;
 }
 
@@ -152,13 +160,17 @@ body {
     padding-bottom: 100px;
 }
 
-#portfolio h2 {
+#portfolio .title {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 30px;
     margin: 0;
     line-height: 100px;
+}
+
+#portfolio h2 {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #container-img {
@@ -166,37 +178,26 @@ body {
     margin: auto;
 }
 
-#portfolio-img1 {
+.portfolio-images {
     height: 330px;
     width: 33%;
     display: inline-block;
-    background-image: url("img/portfolio1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
+}
+
+#portfolio-img1 {
+    background-image: url("../img/portfolio1.jpg");
 }
 
 #portfolio-img2 {
-    height: 330px;
-    width: 33%;
-    display: inline-block;
-    background-image: url("img/portfolio2.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
+    background-image: url("../img/portfolio2.jpg");
 }
 
 #portfolio-img3 {
-    height: 330px;
-    width: 33%;
-    display: inline-block;
-    background-image: url("img/portfolio3.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
+    background-image: url("../img/portfolio3.jpg");
 }
 
 .mask {
@@ -216,30 +217,35 @@ body {
 .border-portfolio {
     border: 1px solid white;
     height: 100%;
+    position: relative;
 }
 
 .content-portfolio {
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 5px;
 }
 
-#clear2 {
+.clear {
     clear: both;
 }
 
-#kontakt {
+#contact {
     background-color: #213b50;
+    padding: 0 100px;
 }
 
 #contact-me {
-    width: 49%;
+    width: 50%;
     display: inline-block;
     color: white;
-    padding-left: 100px;
     height: 100%;
     float: left;
 }
 
-#contact-me h2 {
+#contact-me .title {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 30px;
@@ -247,26 +253,87 @@ body {
     line-height: 100px;
 }
 
-#contact-me a {
-    width: 50px;
+#contact-me h2 {
+    padding-top: 40px;
 }
 
-#contact-me a i {
-    margin: 10px 20px 10px 0;
+#contact-me address {
+    margin-top: 30px;
+    font-style: normal;
+}
+
+#contact-me a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    margin: 60px 20px 30px 0px;
     background-color: #213b50;
     border: 1px solid white;
     color: white;
-    height: 100%;
+    font-size: 25px;
+}
+
+#contact-me a:hover {
+    background-color: white;
+    border: 1px solid #213b50;
+    color: #213b50;
 }
 
 #form {
-    width: 49%;
+    width: 50%;
     display: inline-block;
-    height: 100%;
     float: left;
 }
 
-#clear3 {
+#form input[type="text"] {
+    width: 100%;
+    background-color: #376284;
+    border: none;
+    color: #eff1f2;
+    padding: 10px;
+}
+
+#form input[type="text"]::placeholder {
+    color: #9ea39c;
+}
+
+#form input[name="email"] {
+    margin-top: 20px;
+}
+
+#form textarea {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #376284;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+#form textarea::placeholder {
+    color: #9ea39c;
+}
+
+#form form input[type="button"]{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid white;
+    color: #FFF;
+    background-color: #5ac92e;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 15%;
+    float: right;
+}
+
+#form form:first-child {
+    margin-top: 100px;
+}
+
+.clear {
     clear: both;
 }
 
@@ -281,5 +348,4 @@ body {
 
 
 /*nie ustawiamy wysokosci na sekcjach  , ale ustawiamy padding*/
-
 
